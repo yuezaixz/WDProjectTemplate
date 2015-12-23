@@ -13,9 +13,11 @@
 		A6CF4BE11C2AE6B10016C22C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6CF4BDF1C2AE6B10016C22C /* Main.storyboard */; };
 		A6CF4BE31C2AE6B10016C22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6CF4BE21C2AE6B10016C22C /* Assets.xcassets */; };
 		A6CF4BE61C2AE6B10016C22C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6CF4BE41C2AE6B10016C22C /* LaunchScreen.storyboard */; };
+		DC8F10F0B5CFAD83851EA648 /* Pods_WDProjectTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAAE88703B1EE2986D6D7E31 /* Pods_WDProjectTemplate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22564A2FFA5FB287F42CAFD3 /* Pods-WDProjectTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDProjectTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-WDProjectTemplate/Pods-WDProjectTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		A6CF4BD31C2AE6B10016C22C /* WDProjectTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDProjectTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6CF4BD71C2AE6B10016C22C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6CF4BD91C2AE6B10016C22C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		A6CF4BE21C2AE6B10016C22C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6CF4BE51C2AE6B10016C22C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6CF4BE71C2AE6B10016C22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF4BBD451B361D4650F6505 /* Pods-WDProjectTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDProjectTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDProjectTemplate/Pods-WDProjectTemplate.debug.xcconfig"; sourceTree = "<group>"; };
+		DAAE88703B1EE2986D6D7E31 /* Pods_WDProjectTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDProjectTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8F10F0B5CFAD83851EA648 /* Pods_WDProjectTemplate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A408DC5779C42B82702C028 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAAE88703B1EE2986D6D7E31 /* Pods_WDProjectTemplate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41B398CB1833ADDB380A743F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAF4BBD451B361D4650F6505 /* Pods-WDProjectTemplate.debug.xcconfig */,
+				22564A2FFA5FB287F42CAFD3 /* Pods-WDProjectTemplate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A6CF4BCA1C2AE6B10016C22C = {
 			isa = PBXGroup;
 			children = (
 				A6CF4BD51C2AE6B10016C22C /* WDProjectTemplate */,
 				A6CF4BD41C2AE6B10016C22C /* Products */,
+				41B398CB1833ADDB380A743F /* Pods */,
+				2A408DC5779C42B82702C028 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6CF4BEA1C2AE6B10016C22C /* Build configuration list for PBXNativeTarget "WDProjectTemplate" */;
 			buildPhases = (
+				9503A676F7EF1DD0A932F036 /* Check Pods Manifest.lock */,
 				A6CF4BCF1C2AE6B10016C22C /* Sources */,
 				A6CF4BD01C2AE6B10016C22C /* Frameworks */,
 				A6CF4BD11C2AE6B10016C22C /* Resources */,
+				684C4467751475051C186D83 /* Embed Pods Frameworks */,
+				FF4F6B459CA60DC46745B5F5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		684C4467751475051C186D83 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WDProjectTemplate/Pods-WDProjectTemplate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9503A676F7EF1DD0A932F036 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF4F6B459CA60DC46745B5F5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WDProjectTemplate/Pods-WDProjectTemplate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6CF4BCF1C2AE6B10016C22C /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		A6CF4BEB1C2AE6B10016C22C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAF4BBD451B361D4650F6505 /* Pods-WDProjectTemplate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -272,6 +348,7 @@
 		};
 		A6CF4BEC1C2AE6B10016C22C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22564A2FFA5FB287F42CAFD3 /* Pods-WDProjectTemplate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -301,6 +378,7 @@
 				A6CF4BEC1C2AE6B10016C22C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
