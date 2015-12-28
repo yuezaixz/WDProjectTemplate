@@ -65,10 +65,10 @@
 		A6CF4BCA1C2AE6B10016C22C = {
 			isa = PBXGroup;
 			children = (
-				A6CF4BD51C2AE6B10016C22C /* WDProjectTemplate */,
-				A6CF4BD41C2AE6B10016C22C /* Products */,
-				41B398CB1833ADDB380A743F /* Pods */,
 				2A408DC5779C42B82702C028 /* Frameworks */,
+				41B398CB1833ADDB380A743F /* Pods */,
+				A6CF4BD41C2AE6B10016C22C /* Products */,
+				A6CF4BD51C2AE6B10016C22C /* WDProjectTemplate */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,19 +83,19 @@
 		A6CF4BD51C2AE6B10016C22C /* WDProjectTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				A6CF4BF21C2AF0880016C22C /* 3rdParty */,
 				A6CF4BF91C2AF2870016C22C /* Base Class */,
 				A6CF4BEE1C2AF0390016C22C /* Constants */,
-				A6CF4BEF1C2AF0460016C22C /* Utils */,
-				A6CF4BF01C2AF0640016C22C /* Services */,
 				A6CF4BF11C2AF0730016C22C /* Models */,
+				A6CF4BF01C2AF0640016C22C /* Services */,
+				A6CF4BD61C2AE6B10016C22C /* Supporting Files */,
 				A6CF4BF31C2AF1F90016C22C /* UI */,
+				A6CF4BEF1C2AF0460016C22C /* Utils */,
 				A6CF4BF41C2AF20F0016C22C /* VC */,
-				A6CF4BF21C2AF0880016C22C /* 3rdParty */,
 				A6CF4BD91C2AE6B10016C22C /* AppDelegate.h */,
 				A6CF4BDA1C2AE6B10016C22C /* AppDelegate.m */,
 				A6CF4BDC1C2AE6B10016C22C /* ViewController.h */,
 				A6CF4BDD1C2AE6B10016C22C /* ViewController.m */,
-				A6CF4BD61C2AE6B10016C22C /* Supporting Files */,
 			);
 			path = WDProjectTemplate;
 			sourceTree = "<group>";
@@ -105,47 +105,47 @@
 			children = (
 				A6CF4BE21C2AE6B10016C22C /* Assets.xcassets */,
 				A6CF4BE71C2AE6B10016C22C /* Info.plist */,
-				A6CF4BD71C2AE6B10016C22C /* main.m */,
 				A6CF4BE41C2AE6B10016C22C /* LaunchScreen.storyboard */,
 				A6CF4BDF1C2AE6B10016C22C /* Main.storyboard */,
 				A6CF4BED1C2AEFFA0016C22C /* WDProjectTemplate.pch */,
+				A6CF4BD71C2AE6B10016C22C /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		A6CF4BEE1C2AF0390016C22C /* Constants */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Constants;
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		A6CF4BEF1C2AF0460016C22C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Utils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		A6CF4BF01C2AF0640016C22C /* Services */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		A6CF4BF11C2AF0730016C22C /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A6CF4BF21C2AF0880016C22C /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = 3rdParty;
+			path = 3rdParty;
 			sourceTree = "<group>";
 		};
 		A6CF4BF31C2AF1F90016C22C /* UI */ = {
@@ -154,51 +154,51 @@
 				A6CF4BF61C2AF23E0016C22C /* Cell */,
 				A6CF4BF51C2AF2390016C22C /* View */,
 			);
-			name = UI;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		A6CF4BF41C2AF20F0016C22C /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				A6CF4BF81C2AF2670016C22C /* ViewModel */,
 				A6CF4BF71C2AF25C0016C22C /* ViewController */,
+				A6CF4BF81C2AF2670016C22C /* ViewModel */,
 			);
-			name = VC;
+			path = VC;
 			sourceTree = "<group>";
 		};
 		A6CF4BF51C2AF2390016C22C /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		A6CF4BF61C2AF23E0016C22C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Cell;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		A6CF4BF71C2AF25C0016C22C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		A6CF4BF81C2AF2670016C22C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = ViewModel;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A6CF4BF91C2AF2870016C22C /* Base Class */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "Base Class";
+			path = "Base Class";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +338,7 @@
 				A6CF4BE01C2AE6B10016C22C /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		A6CF4BE41C2AE6B10016C22C /* LaunchScreen.storyboard */ = {
@@ -346,6 +347,7 @@
 				A6CF4BE51C2AE6B10016C22C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -437,7 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = WDProjectTemplate/Info.plist;
+				INFOPLIST_FILE = "WDProjectTemplate/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidandty.WDProjectTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -450,7 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = WDProjectTemplate/Info.plist;
+				INFOPLIST_FILE = "WDProjectTemplate/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidandty.WDProjectTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
